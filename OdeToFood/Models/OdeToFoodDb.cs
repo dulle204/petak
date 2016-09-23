@@ -39,7 +39,7 @@ namespace OdeToFood.Models
 
         void IOdeToFoodDb.Update<T>(T entity)
         {
-            Entry(entity).State = System.Data.EntityState.Modified;
+            Entry(entity).State = EntityState.Modified;
         }
 
         void IOdeToFoodDb.Remove<T>(T entity)
